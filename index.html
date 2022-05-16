@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="lib/style.css">
+    <title>Tic tac toe</title>
+  </head>
+  <body>
+    <div class="game__wrapper">
+      <header class="game__header">
+        <h1 class="game__title">Tic Tac Toe</h1>
+      </header>
+      <main class="game__main">
+        <section class="game__settings">
+          <div data-role="amount-picker-section">
+            <div>
+              <label for="amount_of_cells">Amount of cells:</label>
+              <select name="amount_of_cells" data-role="amount-cells-picker">
+                <option value="" data-role="default-select-option">Select amount</option>
+                <option value="3">3*3</option>
+                <option value="5">5*5</option>
+              </select>
+            </div>
+       <!--
+        Add level of complexity
+            <div>
+              <label for="level_of_complexity">Level of complexity:</label>
+              <select name="level_of_complexity" data-role="level-picker">
+                <option value="" data-role="default-select-option">Select level</option>
+                <option value="1">Beginner</option>
+                <option value="2">Middle</option>
+                <option value="3">High</option>
+                <option value="4">Top</option>
+              </select>
+            </div> -->
+          </div>
+          <button type="button" class="game_reset hide" data-role="game-reset">Reset</button>
+        </section>
+        <section
+          class="game__table"
+          data-role="game-table">
+        </section>
+      </main>
+      <footer class="game__footer">
+        <div data-role="result-message">&copy;Created by Kostya Bublyk</div>
+      </footer>
+    </div>
+    <div class="popup__wrapper hide" data-role="popup-window">
+      <section class="popup__main">
+        <h2 class="popup__title" data-role="final-title"></h2>
+        <button type="button" class="popup-button" data-role="game-restart">Restart</button>
+      </section>
+    </div>
+    <script src="lib/script.js"></script>
+  </body>
+</html>

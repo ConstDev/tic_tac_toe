@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 16px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+  background-color: azure;
+}
+
+.game__wrapper {
+  margin: 0 auto;
+  background: rgb(216, 26, 26);
+  max-width: 1024px;
+}
+
+.game__header {
+  text-align: center;
+  background-color: green;
+}
+
+.game__table {
+  display: grid;
+  margin: 0 auto;
+  width: 600px;
+  height: 600px;
+  background-color: yellow;
+}
+
+.game__settings {
+  display: flex;
+  width: 100%;
+}
+
+.game__row {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex: 1;
+}
+
+.game__cell {
+  background: blueviolet;
+  font-size: 2rem;
+  color: #fff;
+}
+
+.cell__size--3 {
+  width: 200px;
+  height: 200px;
+}
+
+.cell__size--5 {
+  width: 120px;
+  height: 120px;
+}
+
+.game__cell-cross {
+  background: green;
+}
+
+.game__cell-zero {
+    background: orange;
+}
+
+.game__footer {
+  text-align: center;
+  width: 100%;
+  height: 50px;
+  background-color: blue;
+}
+
+.popup__wrapper {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.popup__main {
+  margin: 10% auto;
+  background-color: azure;
+  border: 1px solid blue;
+  width: 50%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 50px;
+}
+
+.popup__title {
+  color: #000;
+  text-align: center;
+}
+
+.popup-button {
+  display: block;
+  margin: 10px auto;
+  background-color: aquamarine;
+  width: 200px;
+  height: 50px;
+  font-size: 3rem;
+  border-radius: 5px;
+}
+
+.hide {
+  display: none;
+}
